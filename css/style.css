@@ -1,0 +1,215 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f8f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+header{
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2{
+    color: #2563eb;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #2563eb;
+}
+
+/* Buttons */
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(37,99,235,.85),
+        rgba(30,64,175,.85)
+    ),
+    url("../images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero h1{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    max-width: 700px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero button{
+    background: #fff;
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Featured Section */
+.featured{
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.featured h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 25px;
+}
+
+.card{
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card h3{
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* Success Stories */
+section{
+    padding: 80px 20px;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Contact Form */
+form{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea{
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+textarea{
+    min-height: 150px;
+    resize: vertical;
+}
+
+form button{
+    background: #2563eb;
+    color: white;
+}
+
+/* Footer */
+footer{
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile */
+@media(max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1{
+        font-size: 2.2rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
