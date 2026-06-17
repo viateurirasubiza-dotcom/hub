@@ -213,3 +213,15 @@ footer{
         grid-template-columns: 1fr;
     }
 }
+/* Blog cards text */
+.card p{
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Buttons inside cards */
+.card button{
+    margin-top: 15px;
+    background: #2563eb;
+    color: white;
+}
