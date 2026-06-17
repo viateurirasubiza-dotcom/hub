@@ -1,0 +1,26 @@
+{
+  "scholarships": [
+    {
+      "title": "Chevening Scholarship",
+      "description": "Fully funded UK scholarship",
+      "country": "UK"
+    },
+    {
+      "title": "DAAD Scholarship",
+      "description": "Study in Germany",
+      "country": "Germany"
+    }
+  ],
+  "jobs": [
+    {
+      "title": "Software Developer",
+      "description": "Remote job opportunity",
+      "type": "IT"
+    },
+    {
+      "title": "Marketing Officer",
+      "description": "Work with global brands",
+      "type": "Marketing"
+    }
+  ]
+}
