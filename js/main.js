@@ -61,3 +61,11 @@ if (form) {
         form.reset();
     });
 }
+// Active link highlight
+const links = document.querySelectorAll("nav ul li a");
+
+links.forEach(link => {
+    if (link.href === window.location.href) {
+        link.style.color = "#2563eb";
+    }
+});
