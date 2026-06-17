@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Login</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h2>Admin Login</h2>
+
+<form>
+    <input type="email" id="adminEmail" placeholder="Email">
+    <input type="password" id="adminPassword" placeholder="Password">
+    <button type="button" onclick="adminLogin()">Login</button>
+</form>
+
+<script>
+function adminLogin() {
+    let email = document.getElementById("adminEmail").value;
+    let password = document.getElementById("adminPassword").value;
+
+    if(email === "admin@scholarhub.com" && password === "admin123"){
+        alert("Welcome Admin");
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Wrong credentials");
+    }
+}
+</script>
+
+</body>
+</html>
