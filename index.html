@@ -1,93 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScholarHub - Scholarships & Opportunities</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScholarHub - Scholarships & Opportunities</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">
-                <h2>ScholarHub</h2>
-            </div>
+<!-- HEADER -->
+<header>
+<nav>
+    <div class="logo">
+        <h2>ScholarHub</h2>
+    </div>
 
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Scholarships</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Internships</a></li>
-                <li><a href="#">Success Stories</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 
-            <div>
-                <button>Login</button>
-                <button>Register</button>
-            </div>
-        </nav>
-    </header>
+    <div>
+        <button onclick="goLogin()">Login</button>
+        <button onclick="goRegister()">Register</button>
+    </div>
+</nav>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Find Scholarships, Jobs & Global Opportunities</h1>
-        <p>
-            Discover fully funded scholarships, internships,
-            fellowships and career opportunities worldwide.
-        </p>
+<!-- HERO -->
+<section class="hero">
+    <h1>Find Scholarships, Jobs & Global Opportunities</h1>
 
-        <button>Explore Opportunities</button>
-    </section>
+    <p>
+        Discover fully funded scholarships, internships,
+        fellowships and career opportunities worldwide.
+    </p>
 
-    <!-- Featured Scholarships -->
-    <section class="featured">
-        <h2>Latest Scholarships</h2>
+    <button onclick="goScholarships()">Explore Opportunities</button>
+</section>
 
-        <div class="cards">
-            <div class="card">
-                <h3>Master Scholarship 2026</h3>
-                <p>Fully funded scholarship in Europe.</p>
-            </div>
+<!-- SCHOLARSHIPS -->
+<section class="featured">
+    <h2>Latest Scholarships</h2>
 
-            <div class="card">
-                <h3>Canada Scholarship</h3>
-                <p>Study in Canada with full support.</p>
-            </div>
+    <div class="cards">
 
-            <div class="card">
-                <h3>USA Fellowship Program</h3>
-                <p>Leadership and research opportunity.</p>
-            </div>
+        <div class="card">
+            <h3>Master Scholarship 2026</h3>
+            <p>Fully funded scholarship in Europe.</p>
+            <button onclick="goScholarships()">Apply Now</button>
         </div>
-    </section>
 
-    <!-- Success Stories -->
-    <section>
-        <h2>Success Stories</h2>
-        <p>Read experiences from students who secured scholarships.</p>
-    </section>
+        <div class="card">
+            <h3>Canada Scholarship</h3>
+            <p>Study in Canada with full support.</p>
+            <button onclick="goScholarships()">Apply Now</button>
+        </div>
 
-    <!-- Contact -->
-    <section>
-        <h2>Contact Us</h2>
+        <div class="card">
+            <h3>USA Fellowship Program</h3>
+            <p>Leadership and research opportunity.</p>
+            <button onclick="goScholarships()">Apply Now</button>
+        </div>
 
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 ScholarHub. All Rights Reserved.</p>
-    </footer>
+<!-- SUCCESS STORIES -->
+<section>
+    <h2>Success Stories</h2>
+    <p>Read experiences from students who secured scholarships.</p>
+</section>
 
-    <script src="js/main.js"></script>
+<!-- CONTACT -->
+<section>
+<h2>Contact Us</h2>
+
+<form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>&copy; 2026 ScholarHub. All Rights Reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
